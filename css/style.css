@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,600,700);
+
+body {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.col {
+    width: 40%;
+}
+
+.left-col {
+    float: left;
+}
+    .left-col > .left-col-inner {
+        float: right;
+        width: 80%;
+        margin: 0 -10px;
+    }
+    .left-col .item {
+        float: left;
+        padding: 2px;
+        width: 50%;
+
+    }
+    .left-col .item-img {
+        width: 100%;
+        display: block;
+    }
+.header {
+    width: 20%;
+    float: left;
+}
+
+    .header > .logo {
+        text-align: center;
+    }
+    .header .logo-img {
+        display: block;
+        margin: 0 auto;
+    }
+    .header > .nav-list {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+    }
+    .header .nav-item {
+        padding: 8px 0;
+    }
+
+    .header .nav-item a {
+        text-decoration: none;
+        color: #333333;
+        font-family: 'Open Sans';
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+
+    }
+
+    .header .nav-item a:hover {
+        border-top: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        padding: 0 16px;
+    }
+
+.right-col {
+    float: right;
+}
+
+    .right-col > .right-col-inner {}
+
+
+
+
+
