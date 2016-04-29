@@ -47,16 +47,23 @@ body {
 .header {
     width: 20%;
     float: left;
-}
+    position: relative;
 
-    .header > .logo {
+}
+    .header .header-container {
+        position: fixed;
+        top: 50px;
+        left: auto;
+        transform: translateX(40%);
+    }
+    .header  .logo {
         text-align: center;
     }
     .header .logo-img {
         display: block;
         margin: 0 auto;
     }
-    .header > .nav-list {
+    .header .nav-list {
         list-style-type: none;
         text-align: center;
         padding: 0;
@@ -85,8 +92,35 @@ body {
     float: right;
 }
 
-    .right-col > .right-col-inner {}
+    .right-col .right-col-inner {
+        float: left;
+        width: 80%;
 
+    }
+
+    .right-col > .right-col-inner > .post {
+        position: relative;
+        border-bottom: 1px dotted #333333;
+    }
+    .right-col > .right-col-inner > .post a {
+        text-decoration: none;
+        color: #333333;
+    }
+    .right-col .post-inner {}
+    .post .image {
+        width: 100%
+    }
+    .right-col .sticky {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .post .title {
+        font-size: 15px;
+        font-weight: 500;
+        color: #111;
+        letter-spacing: 1.4px;
+    }
 
 
 
