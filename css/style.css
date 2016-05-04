@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,600,700);
 
-body {
+body, html {
     font-family: 'Raleway', 'Open Sans', sans-serif;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
 }
 
 * {
@@ -47,15 +51,12 @@ body {
 .header {
     width: 20%;
     float: left;
-    position: relative;
+    position: fixed;
+    top: 50px;
+    left: 40%;
 
 }
-    .header .header-container {
-        position: fixed;
-        top: 50px;
-        left: auto;
-        transform: translateX(40%);
-    }
+
     .header  .logo {
         text-align: center;
     }
@@ -101,27 +102,70 @@ body {
     .right-col > .right-col-inner > .post {
         position: relative;
         border-bottom: 1px dotted #333333;
+        margin-bottom: 40px;
     }
     .right-col > .right-col-inner > .post a {
         text-decoration: none;
         color: #333333;
     }
-    .right-col .post-inner {}
+    .right-col .post-inner {
+
+    }
     .post .image {
         width: 100%
     }
-    .right-col .sticky {
+    .right-col-inner .sticky {
         position: absolute;
         right: 0;
         top: 0;
     }
     .post .title {
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 600;
         color: #111;
-        letter-spacing: 1.4px;
+        letter-spacing: 1px;
     }
 
+    .post .title a:hover {
+        color: #fe4642;
+    }
+    .post .content {
+        letter-spacing: 1px;
+        line-height: 1.75em;
+        font-size: 13px;
+    }
 
+    .post .after-post {
+        margin-bottom: 6px;
+        text-transform: capitalize;
+        font-size: 12px;
+        color: #666;
+        font-family: 'Open Sans';
+        letter-spacing: 1px;
 
+    }
+    .post .after-post a:hover {
+        color: #fe4642;
+        border-bottom: 1px solid #fe4642;
+    }
 
+.footer {
+    margin: 0;
+    width: 100%;
+}
+    .footer .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer .container .contacts {
+        width: 50%;
+        float: left;
+    }
+    .contacts .contacts-list {
+        list-style-type: none;
+        margin: 0;
+    }
+    .contacts .contacts-list a {
+        text-decoration: none;
+        color: #333;
+    }
