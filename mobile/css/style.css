@@ -23,8 +23,9 @@ body, html {
 }
 
 .vers-nav {
-    width: 80%;
-    margin: 10px auto;
+    position: absolute;
+    top: 14px;
+    left: calc(50% - (246px / 2));
     text-align: center;
 }
 
@@ -87,7 +88,7 @@ body, html {
     position: relative;
     top: auto;
     left: auto;
-    margin: 30px auto;
+    margin: 70px auto 30px;
 }
 
     .header  .logo {
@@ -279,6 +280,7 @@ body, html {
         top: 110px;
         left: 40%;
         float: left;
+        margin-top: 0;
     }
 
     .header .nav-item {
