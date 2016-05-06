@@ -38,6 +38,7 @@ body, html {
 }
 
 .left-col {
+    display: none;
     float: left;
 }
     .left-col > .left-col-inner {
@@ -82,12 +83,11 @@ body, html {
 
 
 .header {
-    width: 20%;
-    float: left;
-    position: fixed;
-    top: 110px;
-    left: 40%;
-
+    width: 90%;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 30px auto;
 }
 
     .header  .logo {
@@ -98,11 +98,13 @@ body, html {
         margin: 0 auto;
     }
     .header .nav-list {
+        display: none;
         list-style-type: none;
         text-align: center;
         padding: 0;
     }
     .header .nav-item {
+        display: inline-block;
         padding: 8px 0;
     }
 
@@ -122,7 +124,7 @@ body, html {
         padding: 0 16px;
     }
     .header .menu-toggle {
-        display: none;
+        display: block;
         position: absolute;
         top: 0;
         right: 0;
@@ -135,12 +137,13 @@ body, html {
     }
 
 .right-col {
-    float: right;
+    width: 100%;
+    margin: 0 auto;
 }
 
     .right-col .right-col-inner {
-        float: left;
-        width: 80%;
+        width: 90%;
+        margin: 0 auto;
 
     }
 
@@ -199,7 +202,7 @@ body, html {
     width: 100%;
 }
     .footer .container {
-        width: 83%;
+        width: 90%;
         margin: 0 auto;
     }
     .footer .container .contacts {
@@ -226,6 +229,7 @@ body, html {
     }
 
     .footer .logos {
+        display: none;
         float: right;
         margin: 0;
         padding: 0;
@@ -244,17 +248,9 @@ body, html {
         color: #333;
     }
 
-@media (max-width: 992px) {
-    .header {
-        position: relative;
-        width: 90%;
-        top: auto;
-        left: auto;
-        float: none;
-        margin: 30px auto;
-    }
-    .nav-list {
-
+@media (min-width: 680px) {
+    .header .nav-list {
+        display: block;
     }
     .header .nav-item {
         display: inline-block;
@@ -270,36 +266,60 @@ body, html {
         border: none;
         padding: 14px;
     }
-    .left-col {
-        display: none;
-    }
-    .right-col {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .right-col .right-col-inner {
-        width: 90%;
-        float: none;
-        margin: 0 auto;
-    }
-    .right-col .right-col-inner .post {
-        margin: 0 auto;
-    }
-    .footer .container {
-        width: 90%;
-    }
-    .footer .logos {
+    .header .menu-toggle {
         display: none;
     }
 }
 
-@media (max-width: 680px) {
-    .header .nav-list {
-        display: none;
+
+@media (min-width: 992px) {
+    .header {
+        position: fixed;
+        width: 20%;
+        top: 110px;
+        left: 40%;
+        float: left;
+    }
+
+    .header .nav-item {
+        display: block;
+        padding: 8px 0;
+    }
+    .header .nav-item a {
+        padding: 0 8px;
+        font-size: 13px;
+        color: #333;
+        letter-spacing: 3px;
+    }
+    .header .nav-item a:hover {
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        padding: 0 16px;
+    }
+    .col {
+        width: 40%;
+        margin-top: 60px;
+    }
+    .left-col {
+        display: block;
+        float: left;
+    }
+    .right-col {
+        float: right;
+    }
+    .right-col .right-col-inner {
+        width: 80%;
+        float: left;
+    }
+    .right-col .right-col-inner .post {
 
     }
-    .header .menu-toggle {
+    .footer .container {
+        width: 84%;
+    }
+    .footer .logos {
         display: block;
     }
+
 }
 
