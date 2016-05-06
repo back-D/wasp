@@ -281,6 +281,7 @@ body, html {
         left: 40%;
         float: left;
         margin-top: 0;
+        max-width: 270px;
     }
 
     .header .nav-item {
@@ -312,9 +313,10 @@ body, html {
     .right-col .right-col-inner {
         width: 80%;
         float: left;
+        max-width: 380px;
     }
-    .right-col .right-col-inner .post {
-
+    .right-col .left-col-inner {
+        max-width: 380px;
     }
     .footer .container {
         width: 84%;

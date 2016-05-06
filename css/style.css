@@ -36,6 +36,7 @@ body, html {
 .col {
     width: 40%;
     margin-top: 60px;
+
 }
 
 .left-col {
@@ -45,6 +46,7 @@ body, html {
         float: right;
         width: 80%;
         margin: 0 -10px;
+        max-width: 380px;
     }
     .left-col .item {
         position: relative;
@@ -88,7 +90,7 @@ body, html {
     position: fixed;
     top: 110px;
     left: 40%;
-
+    max-width: 250px;
 }
 
     .header  .logo {
@@ -142,7 +144,7 @@ body, html {
     .right-col .right-col-inner {
         float: left;
         width: 80%;
-
+        max-width: 380px;
     }
 
     .right-col > .right-col-inner > .post {
@@ -253,6 +255,7 @@ body, html {
         left: auto;
         float: none;
         margin: 70px auto 30px;
+        max-width: none;
     }
     .nav-list {
 
@@ -282,6 +285,7 @@ body, html {
         width: 90%;
         float: none;
         margin: 0 auto;
+        max-width: none;
     }
     .right-col .right-col-inner .post {
         margin: 0 auto;
